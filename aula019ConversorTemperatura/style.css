@@ -1,0 +1,26 @@
+
+body{
+    background: gray;
+}
+
+section{
+    background: rgb(80, 79, 76);
+    height: 400px;
+    text-align: center;    
+    width: 400px;  
+    margin: auto;
+    color: rgb(196, 223, 247);
+    border-radius: 20px;
+    
+}
+
+div{
+    margin: auto;
+    text-align: center;
+    background: rgb(25, 34, 25);
+    width: 300px;
+    margin-bottom: 40px;
+    border-radius: 10px;  
+    border-color: rgb(189, 169, 169);     
+    
+}

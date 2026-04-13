@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1>Quiz do Gabriel</h1>
+        <article id="instrucoes">Leia a questão e clique na resposta correta</article>
+        <article class="questoes">
+            <header class="questao">
+                <span id="numQuestao"></span>
+                <h2 id="pergunta"></h2>              
+            </header>
+
+            <div class="corpo">
+                <ol id="alternativas">
+                    <li data-opcao="A" class="respostas" onclick="verificarSeAcertou(this)"></li>
+                    <li data-opcao="B" class="respostas" onclick="verificarSeAcertou(this)"></li>
+                    <li data-opcao="C" class="respostas" onclick="verificarSeAcertou(this)"></li>
+                </ol>
+
+            </div>
+
+        </article>
+        
+        <p id="mensagem"></p>
+        <article id="aviso">Questão <span id="numero"></span> de <span id="total"></span></article>
+
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+
+
+    
+</body>
+</html>

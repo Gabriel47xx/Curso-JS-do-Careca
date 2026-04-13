@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<section>   
+    <h1>Conversor de Temperatura</h1>
+    <H2>Use o Slider na escala de graus Celsius para Converter</H2>
+     <div>
+        <label for="celsius">Celsius</label>
+        <input type="text" id="numC" disabled> C° <br> 
+        <input type="range" name="" id="celsius" 
+        min="-300"
+        max="300"
+        value="0"
+        onchange="atualizarC(); atualizarF(); atualizartK()"
+        autofocus>
+     </div>
+     
+     <div>
+        <label for="fahrenheit">Fahrenheit</label>
+        <input type="text" id="numF" disabled> F° <br>
+        <input type="range" name="" id="fahrenheit"
+        min="-500"
+        max="500"
+        value="0"        
+        >
+     </div>
+
+     <button id="btnZerar" onclick="zerar()">Zerar</button>
+
+
+
+
+
+    
+
+
+
+</section>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+section{
+    background: rgb(189, 189, 189);
+    width: 400px;
+    text-align: center;
+    border-radius: 30px;
+    margin: auto;
+}
+button{
+    border-radius: 5px;
+    border-style:none;
+    background: rgb(141, 137, 137);
+    color: rgb(243, 245, 119);
+}
+

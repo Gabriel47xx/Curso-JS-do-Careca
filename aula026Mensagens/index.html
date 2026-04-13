@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="telaPrincipal">
+        <div id="abrirModal" class="modal">
+            <div>
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <h2>Aviso</h2>
+                <p>É obrigatorio add uma data, uma citação e o altor antes de postar !</p>
+            </div>
+        </div>
+
+        <section class="sectionForm">
+            <h1>App Mensagem do Dia </h1>
+            
+            <p id="aviso">Seu app de mensagem do dia</p>
+
+            <form id="formulario">
+                <div class="form-group">
+                    <label for="data">Data</label>
+                    <input type="date" name="data" id="data" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="citacao">Citação</label>
+                    <textarea name="citacao" id="citacao" rows="3" autofocus placeholder="Digite aqui sua mensagem" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="autoria">Autoria:</label>
+                    <input type="text" name="autoria" id="autoria" placeholder="Digite quem é o autor do texto">
+                </div>
+
+                <div id="divBotoes" class="form-group">
+                    <button type="button" id="btnCriar" class="btn" onclick="criarCitacao()">Criar</button>
+                    <button type="reset" id="btnLimpar" class="btn">Limpar</button>
+                </div>
+            </form>
+        </section>
+
+        <p id="aviso2"></p>
+
+        <section class="conteudos">
+            <article id="citacao00" class="citacao fundo1">
+                <h2></h2>
+                <blockquote></blockquote>
+                <span></span>
+            </article>
+            
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+    <script src="html2canvas.js"></script>
+
+    
+</body>
+</html>

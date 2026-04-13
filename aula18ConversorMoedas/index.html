@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Real</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <section>
+        <h1>Conversor de Moedas R$</h1>
+        <p>Digite o valor e escolha a opção de converção !</p>
+        <div>
+            R$
+            <input type="number" name="" id="inpValor" step="0.1" autofocus>            
+        </div>        
+        <div>
+            <input type="radio" 
+            name="moedaEstrangeira" 
+            id="dolar"> <label for="dolar">Dólar</label>
+
+            <input type="radio" 
+            name="moedaEstrangeira" 
+            id="euro"> <label for="euro">Euro</label>
+
+            <input type="radio"
+            name="moedaEstrangeira" 
+            id="libra"> <label for="libra">Libra</label>
+
+            <input type="radio" 
+            name="moedaEstrangeira" 
+            id="bitcoin"> <label for="bitcoin">Bitcoin</label>      
+        </div>
+        <div>
+            <button id="btnConverter" onclick="converter()">CONVERTER</button>
+            <BUtton id="btnLimpar">LIMPAR</BUtton>
+        </div>
+        <div>
+            <h2>Resultado Converção</h2>
+            <p id="resultado"></p>
+        </div>
+    </section>
+
+    <script src="scipt.js"></script>
+</body>
+</html>
