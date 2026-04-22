@@ -11,6 +11,12 @@ li{
     border: 5px solid transparent;
 }
 
+.videos {
+    width: 640px;
+    display: flex;
+    gap: 1rem;
+}
+
 #btnPrev, #btnNext {
     font-size: 2rem;
     cursor: pointer;
@@ -25,7 +31,36 @@ li{
 
 .capaTumb{
     width: 100px;
-    
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;    
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* largura da barra de rolagem */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #222;        /* cor de fundo da barra de rolagem */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--principal); /* cor do scroll (thumb) da barra de rolagem */
+    border-radius: 20px;                /* arredondar o scroll (thumb) */
+    border: 3px solid #222;           /* criar um espaco em volta do scroll */
+}
+
+#btnPrev, #btnNext {
+    font-size: 2rem;
+    cursor: pointer;
+    height: 150px;
+    border: 0;
+    width: 50px;
+    border-radius: 8px;
+    margin: 0 0.25rem;
+    background: red;
+    color: white;
 }
 
 
