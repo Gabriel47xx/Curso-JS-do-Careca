@@ -3,7 +3,7 @@ let ulsElis = document.querySelectorAll('ul li')
 
 let qtdItens = ulsElis.length
 
-let numItens = 6
+let numDeItens = 6
 
 let lista1 = document.querySelectorAll('#lista1 li')
 
@@ -15,7 +15,7 @@ function show(indice, indiceLista) {
     let listaUl = document.querySelector('#lista'+indiceLista)
     //console.log(listaUl)
 
-    let mover  = 100
+    let mover  = 200
     let posicaoXDireita = mover
     let posicaoXEsquerda = -mover
 
