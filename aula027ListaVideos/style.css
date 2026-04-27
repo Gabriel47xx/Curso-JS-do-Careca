@@ -52,6 +52,12 @@ li{
     border-radius: 5px;    
 }
 
+.capaTumb:hover{
+    border: 3px solid red;
+    box-shadow: 0 0 30px rgba(255, 8, 0, 0.678);
+}
+
+
 body::-webkit-scrollbar {
     width: 12px;               /* largura da barra de rolagem */
   }
@@ -77,13 +83,27 @@ body::-webkit-scrollbar-thumb {
     background: red;
     color: white;
 }
+
+#btnPrev:hover, #btnNext:hover{
+    border: 3px solid red;
+    box-shadow: 0 0 30px rgba(255, 0, 0);
+    transform: scale(1.05);
+}
+
 #conteudos {
     text-align: center;
 
 }
 
-#banerPincipal{
-    margin: auto;
+#banerPincipal{    
+    width: auto;
 }
+
+#banerPrincipal:hover{
+    border: 3px solid red;
+    box-shadow: 0 0 30px rgba(255, 0, 0);
+}
+
+
 
 
