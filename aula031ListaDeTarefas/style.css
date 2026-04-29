@@ -1,0 +1,13 @@
+li{
+    display: flex;
+    flex-direction: row;
+    width: 200PX;
+    background-color: aqua;
+    align-items: center;
+}
+
+input[type=button]{
+    margin-left: 50px;
+    background-color: red;
+    color: white;
+}
