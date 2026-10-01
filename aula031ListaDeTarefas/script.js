@@ -14,7 +14,7 @@ function addTarefa(){
 
     let li = document.createElement('li')
     li.innerHTML = `
-                    <input type="checkbox">
+                    <input type="checkbox", id="check">
                     <span>${inputTarefa.value}</span>                   
                     <input type="button" value="X" class="btnDelet">
                 `;
