@@ -13,7 +13,7 @@ document.getElementById('cadastrarCliente')
     .addEventListener('click', openModal)
 
 
-document.getElementById('modalClose')
+document.getElementById('modal-close')
     .addEventListener('click', closeModal)
 
 
