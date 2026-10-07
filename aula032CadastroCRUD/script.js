@@ -46,15 +46,22 @@ const deleteClient = (index) => {
     setLocalStorage(db_client)
 }
 
-isValidFields = () => {    
-    
+const isValidFields = () => {
+    return document.getElementById('form').reportValidity()
 }
+
 
 //Interação com o layout
 const saveClient = () => {
     if (isValidFields()) {
-        console.log ("Cadastrando cliente...")  
-           
+        const cliente = {
+            nome: document.getElementById('nome').value,
+            email: document.getElementById('email').value,
+            celular: document.getElementById('celular').value,
+            endereco: document.getElementById('cidade').value
+        }
+        createClient(cliente)
+        console.log('Cadastrando Cliete...')
     }
 }
 
