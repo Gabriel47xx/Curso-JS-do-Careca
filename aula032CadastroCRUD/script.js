@@ -52,12 +52,13 @@ const saveClient = () => {
             nome: document.getElementById('nome').value,
             email: document.getElementById('email').value,
             celular: document.getElementById('celular').value,
-            endereco: document.getElementById('cidade').value
+            cidade: document.getElementById('cidade').value
         }
         createClient(cliente)
         closeModal()
         alert('Cliente Salvo')
         console.log('Cadastrando Cliete...')
+        updadeTable()
     }
 }
 
@@ -68,9 +69,31 @@ const clearFields = () => {
     document.getElementById('cidade').value = null
 }
 
-const updadeTable = () => {
+
+function createRow(client) {
+    const newRow = document.createElement('tr')
+    newRow.innerHTML = `
+            <td>${client.nome}</td>
+            <td>${client.email}</td>
+            <td>${client.celular}</td>
+            <td>${client.cidade}</td>
+            <td>
+                <button type="button" class="button green">Editar</button>
+                <button type="button" class="button red">Excluir</button>
+            </td>
+         `
+    document.querySelector('#tb_client > tbody').appendChild(newRow)
+}
+
+function updadeTable() {
     const db_client = readClient()
-    
+    clearTable()
+    db_client.forEach(createRow)
+}
+
+const clearTable = () => {
+    const rows = document.querySelectorAll('#tb_client > tbody tr')
+    rows.forEach(row => row.parentNode.removeChild(row))
 }
 
 
