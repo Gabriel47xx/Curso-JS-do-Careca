@@ -6,13 +6,7 @@ const openModal = () => {
 
 const closeModal = () => {
     document.getElementById('modal').classList.remove('active')
-}
-
-const tempClient = {
-    nome: "YURI",
-    email: "xaulimMatadorDePorco@gmail.com",
-    celular: "4002-8922",
-    cidade: "Passa Quato"
+    clearFields()
 }
 
 const getLocalStorage = () => JSON.parse(localStorage.getItem('db_client')) ?? []
@@ -61,11 +55,23 @@ const saveClient = () => {
             endereco: document.getElementById('cidade').value
         }
         createClient(cliente)
+        closeModal()
+        alert('Cliente Salvo')
         console.log('Cadastrando Cliete...')
     }
 }
 
+const clearFields = () => {
+    document.getElementById('nome').value = null
+    document.getElementById('email').value = null
+    document.getElementById('celular').value = null
+    document.getElementById('cidade').value = null
+}
 
+const updadeTable = () => {
+    const db_client = readClient()
+    
+}
 
 
 // Eventos
